@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zombie</title>
 </head>
 <body>
     <script src="simple.js">
         var zombies = [];
         for(i = 0; i < 100; i++){
-            zombies.push({x: random(totalWidth), y:random(totalHeight), speed:random(1,50)});
+            zombies.push({x: random(totalWidth), y:random(totalHeight), speed:random(1,5)});
         }
-        /Update/
-        function update (){
+
+        function update(){
             clearScreen();
             var i = 0;
-            while(i < 10) {
+            while(i < 10){
                 var zombie = zombies[i];
 
-                picture(zombie.x, zombie.y, "http://spelprogrammering.nu/bilder/zombie.png%22);
+                picture(zombie.x, zombie.y, "http://spelprogrammering.nu/bilder/zombie.png");
                 if(zombie.x < mouse.x ){
                     zombie.x += zombie.speed;
                 }
@@ -38,14 +38,6 @@
                 i += 1;
             }
         }
-        /*ClearScreen*/
-        
-        
-        /*while(i < 10) */
-        /*var zombie = zombies[i]*/
-        /*Picture */
-        /*Controls (mouse movement)*/
-        /*Collision detection*/
     </script>
 </body>
 </html>
