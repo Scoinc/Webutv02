@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="simple.js">
+        circle(300, 300, 100, "yellow"); //head
+        rectangle(250, 400, 100, 200, "blue"); //Body
+        line(250, 400, 150, 500, 10, "red"); //Left arm
+        line(350, 400, 450, 500, 10, "red"); //right arm
+
+        //Eyes and eyebrows
+            line(240, 270, 280, 270, 1, "black");
+            circle(260, 290, 10, "black");
+
+            line(320, 270, 360, 270, 1, "black");
+            circle(340, 290, 10, "black");
+
+        //Mouth
+        line();
+        line();
+
+        //Nose
+        line();
+
+        //Legs
+        for(i = 1; i <= 2; i++){
+            rectangle();
+            rectangle();
+        }
+    </script>
+</body>
+</html>
