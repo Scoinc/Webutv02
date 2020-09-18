@@ -8,10 +8,14 @@
 <body>
     
     <script src="simple.js">
-    for(i = 0; i < 10000; i++){
-        //Requires randomColor script
-        rectangle(random(200), random(200), 10, 10, randomColor());
+        function start(){
+    for(i = 0; i < 10; i++){
+       var x = random(500);
+       var y = random(500);
+
+       text(x, y, 10, ("x=" + x + ", y=" + y), "black");
     }
+}
     </script>
 </body>
 </html>
