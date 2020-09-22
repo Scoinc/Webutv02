@@ -1,0 +1,26 @@
+body {
+  background-color: #801919;
+}
+
+h1 {
+  color: #00dc00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header{
+  height: 10vh;
+  width: 100%;
+  background-color: #fa0;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+}
+/*# sourceMappingURL=Style.css.map */
