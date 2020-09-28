@@ -3,12 +3,12 @@ $bgc: rgb(128, 25, 25);
 
 body{
     background-color: $bgc;
-}
 
-h1{
-    color: $textColor;
-    display: flex;
-    justify-content: center;
+    h1{
+        color: $textColor;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 #main{
