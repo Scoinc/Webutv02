@@ -1,0 +1,18 @@
+@import "./variables";
+
+@mixin color{
+    background-color: $leaf_color;
+    color: burlywood;
+} 
+
+@mixin font_large {
+    font-size: $super_large;
+}
+
+@mixin font_medium {
+    font-size: $not_large;
+}
+
+@mixin font_small {
+    font-size: $small;
+}

@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./functions";
+
+body {
+
+    @include color;
+}
+
+.test {
+    @include font_medium;
+}
+
+header{
+    @include font_large;
+}
+
+.text{
+    @include font_small;
+}
