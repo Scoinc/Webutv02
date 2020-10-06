@@ -17,3 +17,9 @@ header{
 .text{
     @include font_small;
 }
+
+#testc{
+    height: $super_large;
+    width: 100%;
+    color: lightgreen;
+}
