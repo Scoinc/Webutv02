@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "master.scss",
+        "_variables.scss",
+        "_functions.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "master.css"
+}
