@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skins</title>
+    <link rel="stylesheet" href="master.css">
 </head>
 <body>
     <div id="main">
         <header>
-            <div class="hBox">box 1</div>
-            <div class="hBox">box 2</div>
-            <div class="hBox">box 3</div>
+            <div class="hBox"><a href="index.html">Home</a></div>
+            <div class="hBox"><a href="Skins.html">Skins</a></div>
+            <div class="hBox"><a href="Abilities.html">Abilities</a></div>
         </header>
 
         <div id="largeimg">
-            
+            <img id="Skin" src="images/Yuumi_OriginalSkin.jpg" alt="">
         </div>
 
-        <div class="preview" id="preview1">
+        <div class="preview">
+            <img src="Images/Yuumi_OriginalSkin.jpg" onclick="document.getElementById('Skin').src='Images/Yuumi_OriginalSkin.jpg'" alt="Original">
             <p>Yuumi</p>
         </div>
-        <div class="preview" id="preview2">
+        <div class="preview">
+            <img src="images/Yuumi_BattlePrincipalSkin.jpg" onclick="document.getElementById('Skin').src='images/Yuumi_BattlePrincipalSkin.jpg'" alt="Battle principal Yuumi">
             <p>Battle principal Yuumi</p>
         </div>
-        <div class="preview" id="preview3">
+        <div class="preview">
+            <img src="images/Yuumi_HeartseekerSkin.jpg" onclick="document.getElementById('Skin').src='images/Yuumi_HeartseekerSkin.jpg'" alt="Heartseeker Yuumi">
             <p>Heartseeker Yuumi</p>
         </div>
     </div>

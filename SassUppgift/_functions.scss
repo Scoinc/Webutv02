@@ -1,2 +1,5 @@
-@import "./variables"
+@import "./variables";
 
+@mixin bgc{
+    background-color: $bgc;
+}

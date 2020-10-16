@@ -1,3 +1,39 @@
 @import "./variables";
 @import "./functions";
 
+header{
+    height: 100px;
+    width: 100%;
+
+    .hBox{
+        font-size: 40px;
+        text-align: center;
+        display: block;
+        width: 10%;
+        margin-left: 10px;
+        height: 50px;
+        float: left;
+        border: 4px solid black;
+    }
+}
+
+body{
+    @include bgc;
+}
+
+.preview {
+
+    border: 5px, solid, black;
+
+    p{
+        float: left;
+        position: relative;
+        margin-left: 105px;
+    }
+
+    img{
+        margin: 5px;
+        float: left;
+        height: 100px;
+        width: 200px;
+}}
