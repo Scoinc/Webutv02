@@ -1,19 +1,32 @@
 @import "./variables";
 @import "./functions";
 
+/* Comments about the Javascript:
+    Javascript is used for the same purpose on both 'skins' and 'abilities' where it changes the picture/video when an image is clicked.
+    The video on 'abilities' doesn't work however and i don't know why.
+*/
+
+//Uses the header mixin
 header{
     @include header
 }
 
+//Background color
 body{
     @include bgc;
 }
 
+//Keeping the text to the left side of the page and making it readable
 #lore{
     width: 45%;
+    background-color: rgb(180, 215, 255);
+    
+    p{
+        margin: 10px;
+    }
 }
 
-//does work
+//not used anywhere, will remove
 #skinNames{
     
     p{
@@ -25,21 +38,31 @@ body{
     }
 }
 
-//jag är så fucking lost varför kan det inte bara vara åt vänster under texten
+//Does not work, text is supposed to be above the images
 .preview {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex: 0 400;
+    float: left;
+
+    p{
+    }
 
     img{
-        flex: 0 400;
         height: 100px;
         margin-bottom: 5px;
 }}
 
+//This part works as it's supposed to but the video doesn't play for some reason
 .ability{
     height: 50px;
     width: 50px;
     float: left;
     margin-right: 20px;
+}
+
+//This was called 'abilityPreview' but it didn't work, changing the name to this made it somehow work, this is also 40 characters 
+#T̷͔̍r̵͒̽ä̷̛͔d̸̛̑g̸͋͝å̵̛̈́r̷̞̆d̴̋͝ë̵͔n̴̠̕{
+    width: 300px;
 }

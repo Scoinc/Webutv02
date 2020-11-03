@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/* Comments about the Javascript:
+    Javascript is used for the same purpose on both 'skins' and 'abilities' where it changes the picture/video when an image is clicked.
+    The video on 'abilities' doesn't work however and i don't know why.
+*/
 header {
   height: 100px;
   width: 100%;
@@ -20,6 +25,11 @@ body {
 
 #lore {
   width: 45%;
+  background-color: #b4d7ff;
+}
+
+#lore p {
+  margin: 10px;
 }
 
 #skinNames p {
@@ -39,12 +49,13 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.preview img {
   -webkit-box-flex: 0;
       -ms-flex: 0 400;
           flex: 0 400;
+  float: left;
+}
+
+.preview img {
   height: 100px;
   margin-bottom: 5px;
 }
@@ -54,5 +65,9 @@ body {
   width: 50px;
   float: left;
   margin-right: 20px;
+}
+
+#T̷͔̍r̵͒̽ä̷̛͔d̸̛̑g̸͋͝å̵̛̈́r̷̞̆d̴̋͝ë̵͔n̴̠̕ {
+  width: 300px;
 }
 /*# sourceMappingURL=master.css.map */

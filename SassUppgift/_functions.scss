@@ -1,9 +1,11 @@
 @import "./variables";
 
+//Background Color
 @mixin bgc{
     background-color: $bgc;
 }
 
+//Header used in every page
 @mixin header {
     height: 100px;
     width: 100%;
@@ -18,8 +20,4 @@
         float: left;
         border: 4px solid black;
     }
-}
-
-@mixin border {
-    border: 5px, solid, black;
 }
