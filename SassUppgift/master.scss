@@ -2,38 +2,44 @@
 @import "./functions";
 
 header{
-    height: 100px;
-    width: 100%;
-
-    .hBox{
-        font-size: 40px;
-        text-align: center;
-        display: block;
-        width: 10%;
-        margin-left: 10px;
-        height: 50px;
-        float: left;
-        border: 4px solid black;
-    }
+    @include header
 }
 
 body{
     @include bgc;
 }
 
-.preview {
+#lore{
+    width: 45%;
+}
 
-    border: 5px, solid, black;
-
+//does work
+#skinNames{
+    
     p{
         float: left;
         position: relative;
-        margin-left: 105px;
+        margin-right: 150px;
+        margin-top: 5px;
+        margin-bottom: 30px;
     }
+}
+
+//jag är så fucking lost varför kan det inte bara vara åt vänster under texten
+.preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     img{
-        margin: 5px;
-        float: left;
+        flex: 0 400;
         height: 100px;
-        width: 200px;
+        margin-bottom: 5px;
 }}
+
+.ability{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 20px;
+}

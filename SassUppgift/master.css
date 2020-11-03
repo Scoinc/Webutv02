@@ -15,23 +15,44 @@ header .hBox {
 }
 
 body {
-  background-color: #82f0f0;
+  background-color: #73aff3;
+}
+
+#lore {
+  width: 45%;
+}
+
+#skinNames p {
+  float: left;
+  position: relative;
+  margin-right: 150px;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 .preview {
-  border: 5px, solid, black;
-}
-
-.preview p {
-  float: left;
-  position: relative;
-  margin-left: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .preview img {
-  margin: 5px;
-  float: left;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 400;
+          flex: 0 400;
   height: 100px;
-  width: 200px;
+  margin-bottom: 5px;
+}
+
+.ability {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-right: 20px;
 }
 /*# sourceMappingURL=master.css.map */
