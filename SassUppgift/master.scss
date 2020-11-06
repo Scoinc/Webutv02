@@ -40,29 +40,28 @@ body{
 
 //Does not work, text is supposed to be above the images
 .preview {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex: 0 400;
     float: left;
-
-    p{
-    }
+    margin-right: 20px;
 
     img{
         height: 100px;
-        margin-bottom: 5px;
 }}
 
-//This part works as it's supposed to but the video doesn't play for some reason
+//works now
 .ability{
     height: 50px;
     width: 50px;
     float: left;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-//This was called 'abilityPreview' but it didn't work, changing the name to this made it somehow work, this is also 40 characters 
+//This was called 'abilityPreview' but it didn't work, changing the name to this made it somehow work so i'm sorry but it's gonna stay with this name 
 #T̷͔̍r̵͒̽ä̷̛͔d̸̛̑g̸͋͝å̵̛̈́r̷̞̆d̴̋͝ë̵͔n̴̠̕{
     width: 300px;
+}
+
+//Haven't added functionality to change the descriptions
+#abilityDesc{
+    clear: both;
 }
