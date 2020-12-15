@@ -4,12 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Home</title>
     <link rel="stylesheet" href="bootstrap.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Toast</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Toasters
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="products.html">Die-Cast 2-Slice Smart Toaster</a>
+                        <!-- https://www.amazon.com/dp/B00140SC64?linkCode=ogi -->
+                        <a class="dropdown-item" href="products.html">Savoy 4-Slice Toaster</a>
+                        <!-- https://www.amazon.com/dp/B0083VCY16?linkCode=ogi -->
+                        <a class="dropdown-item" href="products.html">R180 Toaster</a>
+                        <!-- https://www.amazon.com/dp/B086H69SJ2?linkCode=ogi -->
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Toasting
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="services.html">Lightly toasted</a>
+                        <a class="dropdown-item" href="services.html">Well toasted</a>
+                        <a class="dropdown-item" href="services.html">Burnt</a>
+                    </div>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+            </ul>
+        </div>
+    </nav>
+    <H2>WE TOAST YOUR BREAD!!!</H2>
+    <main><div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Lightly toasted
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              
+            <div class="col">
+                <div class="card shadow-sm">
+                  <img src="/Images/Toast-PNG-Free-Download.png" alt="" width="40%">
+                  <div class="card-body">
+                    <p class="card-text">LIGHTLY TOASTED BREAD 2 MINUT</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-muted">2 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Well toasted
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                <div class="col">
+                    <div class="card shadow-sm">
+                     
+          <img src="https://media.istockphoto.com/photos/burnt-toast-picture-id686498482?k=6&m=686498482&s=170667a&w=0&h=8np8ceBCD_cWVuQpYhXbjzWnxfNXUBiK56l7l3FaWpM=" alt="" width="40%">
+          
+                      <div class="card-body">
+                        <p class="card-text">OK, THIS WAS IN THE TOASTER SLIGHTLY TOO LONG AND IS NOW MILDLY CHARRED, sorry.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <small class="text-muted">6 mins</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                A little too well toasted
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              
+            <div class="col">
+                <div class="card shadow-sm">
+                  
+      <img src="https://www.elitereaders.com/wp-content/uploads/2015/02/burnt-toast.jpg" alt="" width="70%">
+      
+                  <div class="card-body">
+                    <p class="card-text">it's just burnt and sad</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-muted">25 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </main>
+    
+
+    <footer class="modal-footer">
+        <div class="container">
+          <span class="text-muted">Bottom text</span>
+        </div>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

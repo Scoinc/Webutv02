@@ -9,6 +9,8 @@
 </head>
 
 <body>
+<audio id="Microwave" src="/Images/MicrowaveSoundEffect.mp3" type="audio/mpeg"></audio>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Toast</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -50,9 +52,64 @@
         </div>
     </nav>
     
+    <main>
+        <div class="container">
+        <h1>toast</h1>
+    </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71JWysvMDgL._AC_SL1500_.jpg" alt="" width="40%">
+                <div class="card-body">
+                  <p class="card-text">Proprietary InstaGlo heating system with large color touchscreen controls toasts fast, evenly and consistently every time; Toasters are obsolete, SEE VIDEO BELOW TO LEARN WHY
+                    Say goodbye to slow toast, burnt toast, toast that gets stuck, and toast you have to toast again; See the speed, taste the difference!
+                    Toast your family and friends this holiday season with the gift of the #1 best selling smart toaster.
+                    Always crispy on the outside, warm and delicious inside, on every toast shade setting
+                    Toast breads, bagels, English muffins, frozen waffles & toaster pastries perfectly, the first time every time, just the way you like it</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">2 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+               
+    <img src="https://images-na.ssl-images-amazon.com/images/I/81gjaLYuPIL._AC_SL1500_.jpg" alt="" width="40%">
+    
+                <div class="card-body">
+                  <p class="card-text">About this item
+                    4 Slice Toaster: Toast upto 4 slices of bread to crispy perfection; dual independent control panels to toast at different browning levels simultaneously; extra large, self centering slots ensure even browning and accommodate a variety of breads, including bagels, buns, English muffins, and more
+                    6 Browning Settings: Choose preferred level of browning thanks to the shade setting dial, ranging from 1 (lightest) to 6 (darkest)
+                    4 Push Button Functions: Defrost toasts frozen bread longer to ensure consistent results; Reheat allows for reheating toast so it warms without added browning; Bagel warms the outside and toasts the inside of bagels; Cancel ends the toasting session at any time
+                    High lift lever: Raises smaller pieces of bread up and out of toaster for safe, easy retrieval
+                    User friendly modern design: Removable crumb tray for easy cleaning; brushed and chrome stainless steel with blue LED indicators for sleek contemporary style; handy cord storage; 2 year worldwide warranty</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">7 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                
     <img src="https://images-na.ssl-images-amazon.com/images/I/31AaIfiOe1L._AC_.jpg" alt="">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/81gjaLYuPIL._AC_SL1500_.jpg" alt="">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/71JWysvMDgL._AC_SL1500_.jpg" alt="">
+    
+                <div class="card-body">
+                  <p class="card-text">About this item
+                    900 watt 2 slice toaster with intelligent one touch auto lowering function; Voltage: 110 to 120 Volts
+                    Push-button controls for toast, a bit more, bagel, defrost, and lift and look functions. 5 Settings including- 'A Bit More', 'Lift & Look' , Defrost & Bagel. 2 Slice Extra Wide capacity to suit all bread types
+                    LED panel illuminates according to selected setting on variable browning control
+                    Brushed die cast metal housing; end of cycle beep; 1-1/5 inch-wide slots; cord wrap
+                    Dimensions- 11.25 x 7 x 7.75 inch. 1 year limited warranty</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">4 mins</small>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="playAudio()">try it</button>
+              </div>
+            </div>
+      </main>
     
 
     <footer class="modal-footer">
@@ -64,6 +121,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
+        var x = document.getElementById("Microwave"); 
+        
+        function playAudio() { 
+          x.play(); 
+        } 
+        
+        function pauseAudio() { 
+          x.pause(); 
+        } 
+        </script>
 </body>
 
 </html>
