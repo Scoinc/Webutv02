@@ -1,0 +1,50 @@
+@import "./variables";
+
+@mixin header {
+    height: 75px;
+    width: 100%;
+    background-color: $bleen;
+
+    .hBox{
+        font-size: 20px;
+        text-align: center;
+        display: block;
+        width: 6%;
+        margin-left: 11.5%;
+        margin-top: 85px;
+        height: 25px;
+        float: left;
+        color: $notQuiteBlack;
+        border: 2px solid black;
+        background-color: $bleen;
+    }
+
+    h1{
+        margin-left: 15px;
+        margin-top: 8px;
+        position: absolute;
+        font-size: 45px;
+    }
+}
+
+@mixin footer{
+    background-color: $bleen;
+    height: 60px;
+    width: 100%;
+    color: black;
+
+    h4{
+        margin-top: 10px;
+        margin-left: 20px;
+        position: relative;
+    }
+}
+
+@mixin main{
+
+    color: $notQuiteWhite;
+
+    a{
+        color: $notQuiteWhite;
+    }
+}

@@ -1,0 +1,33 @@
+@import "./_functions";
+@import "./variables";
+
+*{
+    margin: 0;
+}
+
+header{
+    @include header
+}
+
+#backdrop{
+    height: 50px;
+    width: 100%;
+    background-color: $darkBleen;
+}
+
+body{
+    background-color: $notQuiteBlack;
+}
+
+#main{
+    @include main
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+footer{
+    @include footer
+}
