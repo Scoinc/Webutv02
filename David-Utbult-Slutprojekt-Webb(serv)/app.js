@@ -22,9 +22,9 @@ app.use(express.urlencoded())
 app.set('view engine', 'ejs')
 
 //Lyssnar på GET requests på addressen <domain>/
-app.get("/", async (req, res) => {
+app.get("/messages", async (req, res) => {
   const messages = await MessageModel.getAllMessages();
-  res.render('pages/index.ejs', { messages: messages });
+  res.render('pages/index.ejs', { names: messages });
 })
 
 app.get('/index', (req, res) => {
@@ -75,14 +75,13 @@ app.get('/mouse2', (req, res) => {
 //Lyssnar på POST requests på addressen <domain>/
 app.post('/', async (req, res) => {
   //Skapa ett Message objekt
-  const message = MessageModel.createMessage(req.body.email, req.body.message)
+  const message = await MessageModel.createMessage(req.body.email, req.body.message)
 
   //spara elementet Message i databasen
   await dbModule.storeElement(message)
 
   //Ladda om sidan
-  //Index.ejs får inte längre in messages inskickat så den klagar på att messages inte är definierat efter submit men fungerar efter att ha laddat om sidan
-  res.render('pages/index.ejs', { messages: messages });
+  res.redirect('/index')
 })
 
 //Sätt igång servern så att den kan ta emot requests på vald port.
